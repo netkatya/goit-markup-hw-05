@@ -493,15 +493,13 @@ img {
     align-items: center;
     justify-content: center;
     background-color: #e7e9fc;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
-    cursor: pointer;
+    padding: 0;
     margin-bottom: 24px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     top: 24px;
     right: 24px;
@@ -517,6 +515,7 @@ img {
 .modal-icon:hover,
 .modal-icon:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-icon:hover .modal-icon-close,
