@@ -547,19 +547,19 @@ img {
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 38px;
 }
 
 .input-wrapper {
     display: flex;
     align-items: center;
     width: 360px;
-    padding-left: 38px;
 }
 
 .input-icon {
     fill: #404BBF;
-
 }
 
 .modal-text-input {
@@ -569,6 +569,7 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     resize: none;
+    padding: 8px 16px;
 }
 .modal-checkbox {
     display: flex;
