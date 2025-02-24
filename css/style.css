@@ -502,6 +502,9 @@ img {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 24px;
+    right: 24px;
 }
 
 .modal-icon-close {
@@ -619,7 +622,7 @@ img {
 .modal-button {
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     display: block;
     margin: 0 auto;
@@ -636,7 +639,6 @@ img {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
 }
 
 .modal-button:hover,
