@@ -543,45 +543,61 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="input-wraper">
-            <label class="modal-form-label"
-              >Name
-              <svg width="12" height="12" class="input-icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+          <div class="form-item-wraper">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="input-wraper">
               <input
                 type="text"
-                name="name"
+                name="user-name"
                 class="modal-form-input name-input"
                 autofocus
                 required
               />
+              <svg width="12" height="12" class="input-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-wraper">
+            <label class="modal-form-label" for="phone">Phone</label>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                class="modal-form-input"
+                required
+              />
+              <svg width="12" height="12" class="input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item-wraper">
+            <label class="modal-form-label" for="email">Email</label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                class="modal-form-input"
+                required
+              />
+              <svg width="12" height="12" class="input-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-textarea-wraper">
+            <label class="modal-form-label"
+              >Comment
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+                class="modal-text-input"
+                required
+              ></textarea>
             </label>
           </div>
-          <label class="modal-form-label"
-            >Phone<input
-              type="tel"
-              name="phone"
-              class="modal-form-input"
-              required
-          /></label>
-          <label class="modal-form-label"
-            >Email<input
-              type="email"
-              name="email"
-              class="modal-form-input"
-              required
-          /></label>
-          <label class="modal-form-label"
-            >Comment
-            <textarea
-              name="comment"
-              rows="5"
-              placeholder="Text input"
-              class="modal-text-input"
-              required
-            ></textarea>
-          </label>
           <div class="modal-checkbox">
             <label class="modal-checkbox-label"
               ><input

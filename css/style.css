@@ -503,6 +503,7 @@ img {
     position: absolute;
     top: 24px;
     right: 24px;
+    cursor: pointer;
 }
 
 .modal-icon-close {
@@ -538,11 +539,8 @@ img {
     flex-direction: column;
 }
 
-.input-wrapper {
+.form-item-wraper {
     margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    width: 360px;
 }
 
 .modal-form-label {
@@ -553,6 +551,7 @@ img {
     color: #8e8f99;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4px;
 }
 .modal-form-input {
     width: 360px;
@@ -638,6 +637,7 @@ img {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .modal-button:hover,
