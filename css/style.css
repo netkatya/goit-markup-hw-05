@@ -11,7 +11,7 @@ a {
     text-decoration: none;
     color: #434455;
     font-size: 12px;
-    line-height: 1,333;
+    line-height: 1.333;
     letter-spacing: 4%;
 }
 
@@ -583,7 +583,7 @@ img {
     border: 1px solid #4d5ae5;
 }
 
-.modal-form-input:focus .input-icon {
+.modal-form-input:focus +.input-icon {
     fill: #4D5AE5;
 }
 
@@ -618,27 +618,12 @@ img {
     gap: 8px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .modal-checkbox-label {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    align-items: center;
 }
 
 .visually-hidden:checked+.modal-checkbox-label .modal-policy-span {
@@ -663,11 +648,8 @@ img {
 .form-tick 
 
 .modal-policy-link {
-    line-height: 133%;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;  
-    line-height: 117%;
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .modal-button {
