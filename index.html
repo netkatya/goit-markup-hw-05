@@ -550,7 +550,7 @@
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="modal-form-input name-input"
+                class="modal-form-input"
                 autofocus
                 required
               />
@@ -590,27 +590,31 @@
             </div>
           </div>
           <div class="form-textarea-wraper">
-            <label class="modal-form-label" for="comment">Comment </label>
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
-              name="comment"
+              name="user-comment"
               rows="5"
               placeholder="Text input"
               class="modal-text-input"
               required
-              id="comment"
+              id="user-comment"
             ></textarea>
           </div>
           <div class="modal-checkbox">
             <input
               type="checkbox"
-              name="check"
+              name="user-privacy"
               class="visually-hidden"
               required
               id="user-privacy"
+              value="true"
             />
-            <label class="modal-checkbox-label" for="user-privacy"
-              ><span class="modal-policy-span"></span>I accept the terms and
-              conditions of the
+            <label class="modal-checkbox-label" for="user-privacy">
+              <span class="modal-policy-span">
+                <svg whith="10" height="8" class="form-tick">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
               <a class="modal-policy-link" href="">Privacy Policy</a>
             </label>
           </div>

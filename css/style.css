@@ -558,7 +558,7 @@ img {
 }
 
 .modal-form-input {
-    width: 360px;
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -567,7 +567,7 @@ img {
     padding-left: 38px;
     background-color: transparent;
     outline: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
@@ -592,7 +592,7 @@ img {
 }
 
 .modal-text-input {
-    width: 360px;
+    width: 100%;
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -600,7 +600,11 @@ img {
     padding: 8px 16px;
     background-color: transparent;
     outline: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-text-input:focus {
@@ -630,14 +634,17 @@ img {
 .modal-checkbox-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    color: #8e8f99;
     display: flex;
     align-items: center;
 }
 
-.modal-checkbox-input:checked {
-    accent-color: #404bbf;
+.visually-hidden:checked+.modal-checkbox-label .modal-policy-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .modal-policy-span {
@@ -652,6 +659,8 @@ img {
     margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-tick 
 
 .modal-policy-link {
     line-height: 133%;
