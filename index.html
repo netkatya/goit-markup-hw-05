@@ -549,67 +549,70 @@
               <input
                 type="text"
                 name="user-name"
+                id="user-name"
                 class="modal-form-input name-input"
                 autofocus
                 required
               />
-              <svg width="12" height="12" class="input-icon">
+              <svg width="18" height="24" class="input-icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="form-item-wraper">
             <label class="modal-form-label" for="phone">Phone</label>
-            <div>
+            <div class="input-wraper">
               <input
                 type="tel"
                 name="phone"
                 class="modal-form-input"
+                id="phone"
                 required
               />
-              <svg width="12" height="12" class="input-icon">
+              <svg width="18" height="24" class="input-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="form-item-wraper">
             <label class="modal-form-label" for="email">Email</label>
-            <div>
+            <div class="input-wraper">
               <input
                 type="email"
                 name="email"
                 class="modal-form-input"
                 required
+                id="email"
               />
-              <svg width="12" height="12" class="input-icon">
+              <svg width="18" height="24" class="input-icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="form-textarea-wraper">
-            <label class="modal-form-label"
-              >Comment
-              <textarea
-                name="comment"
-                rows="5"
-                placeholder="Text input"
-                class="modal-text-input"
-                required
-              ></textarea>
-            </label>
+            <label class="modal-form-label" for="comment">Comment </label>
+            <textarea
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              class="modal-text-input"
+              required
+              id="comment"
+            ></textarea>
           </div>
           <div class="modal-checkbox">
-            <label class="modal-checkbox-label"
-              ><input
-                type="checkbox"
-                name="check"
-                class="modal-checkbox-input"
-                required
-              />I accept the terms and conditions of the&nbsp;
-              <span
-                ><a class="modal-policy-link" href="">Privacy Policy</a></span
-              ></label
-            >
+            <input
+              type="checkbox"
+              name="check"
+              class="visually-hidden"
+              required
+              id="user-privacy"
+            />
+            <label class="modal-checkbox-label" for="user-privacy"
+              ><span class="modal-policy-span"></span>I accept the terms and
+              conditions of the
+              <a class="modal-policy-link" href="">Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="modal-button">Send</button>
         </form>
