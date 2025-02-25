@@ -538,6 +538,13 @@ img {
     flex-direction: column;
 }
 
+.input-wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+
 .modal-form-label {
     font-weight: 400;
     font-size: 12px;
@@ -548,7 +555,6 @@ img {
     flex-direction: column;
 }
 .modal-form-input {
-    margin-bottom: 8px;
     width: 360px;
     height: 40px;
     border-radius: 4px;
@@ -556,12 +562,6 @@ img {
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 38px;
-}
-
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    width: 360px;
 }
 
 .input-icon {
